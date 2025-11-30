@@ -168,14 +168,15 @@ anizm.net,anizm.com,anizm.pro,anizm.tv,anizle.com,anizle.net,puffytr.com,puffytr
 
 
 ! Element gizleyiciler
-anizm.net##.animeIzleInnerContainer > a:has(img)
-anizm.com##.animeIzleInnerContainer > a:has(img)
-anizm.pro##.animeIzleInnerContainer > a:has(img)
-anizm.tv##.animeIzleInnerContainer > a:has(img)
-anizle.com##.animeIzleInnerContainer > a:has(img)
-anizle.net##.animeIzleInnerContainer > a:has(img)
-puffytr.com##.animeIzleInnerContainer > a:has(img)
-puffytr.net##.animeIzleInnerContainer > a:has(img)
+anizm.net##.animeIzleInnerContainer > a
+anizm.com##.animeIzleInnerContainer > a
+anizm.pro##.animeIzleInnerContainer > a
+anizm.tv##.animeIzleInnerContainer > a
+anizle.com##.animeIzleInnerContainer > a
+anizle.net##.animeIzleInnerContainer > a
+puffytr.com##.animeIzleInnerContainer > a
+puffytr.net##.animeIzleInnerContainer > a
+! Evet burası bayağı bi salak saçma bir şey olmuş gibi duruyor. Eğer bölüm sayfasında birşeyler ters gidiyorsa önce bi reklam engelleyiciyi kapatıp denemenizi tavsiye ediyorum.
 
 ! Gizlilik amaçlı ölçüm engelleyiciler
 ||anizm.net/metrics
