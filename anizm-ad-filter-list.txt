@@ -8,7 +8,7 @@
 ! DONATE: https://buymeacoffee.com/sanalzio
 ! Expires: 3 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt
-! Version: 30 November 2025
+! Version: 1.0.0
 ! Syntax: AdBlock
 
 
@@ -25,10 +25,22 @@
 /(anizm|anizle|puffytr)\.(com|net|pro|tv)\/js\/(grnd|aclb|axium|amon).*?\.js/
 
 ! Element gizleyiciler
-anizm.net,anizm.com,anizm.pro,anizm.tv,anizle.com,anizle.net,puffytr.com,puffytr.net##a:has(+ #videoFrame):has(img), #videoFrame + a:has(img), .animeIzleInnerContainer > a:has(img), .animeIzleBolumListesi > [id*=\"InviteBox\"]
+anizm.net,anizm.com,anizm.pro,anizm.tv,anizle.com,anizle.net,puffytr.com,puffytr.net##a:has(+ #videoFrame):has(img), #videoFrame + a:has(img), .animeIzleInnerContainer > a:has(img), .animeIzleBolumListesi > [id*=\"InviteBox\"], #searchBoxAreaLeft, #searchBoxAreaRight, .aramasagbox, .aramasolbox
 
 ! Gizlilik amaçlı ölçüm engelleyiciler
 /(anizm|anizle|puffytr)\.(com|net|pro|tv)\/metrics\/?.*/
+||googletagmanager.com/gtag/js$xhr,redirect-rule=googletagmanager_gtm.js:5
+||googletagmanager.com^
+||cloudflareinsights.com^
+||anizmplayer.com/gMetrics/
+||ping.anizm.net^
+||ping.anizm.com^
+||ping.anizm.pro^
+||ping.anizm.tv^
+||ping.anizle.com^
+||ping.anizle.net^
+||ping.puffytr.com^
+||ping.puffytr.net^
 
 
 
@@ -166,8 +178,43 @@ anizm.net,anizm.com,anizm.pro,anizm.tv,anizle.com,anizle.net,puffytr.com,puffytr
 ||puffytr.com/js/po-*und.js
 ||puffytr.net/js/po-*und.js
 
+||trafficbass.com^
+
 
 ! Element gizleyiciler
+anizm.net###searchBoxAreaLeft
+anizm.com###searchBoxAreaLeft
+anizm.pro###searchBoxAreaLeft
+anizm.tv###searchBoxAreaLeft
+anizle.com###searchBoxAreaLeft
+anizle.net###searchBoxAreaLeft
+puffytr.com###searchBoxAreaLeft
+puffytr.net###searchBoxAreaLeft
+anizm.net###searchBoxAreaRight
+anizm.com###searchBoxAreaRight
+anizm.pro###searchBoxAreaRight
+anizm.tv###searchBoxAreaRight
+anizle.com###searchBoxAreaRight
+anizle.net###searchBoxAreaRight
+puffytr.com###searchBoxAreaRight
+puffytr.net###searchBoxAreaRight
+anizm.net##.aramasagbox
+anizm.com##.aramasagbox
+anizm.pro##.aramasagbox
+anizm.tv##.aramasagbox
+anizle.com##.aramasagbox
+anizle.net##.aramasagbox
+puffytr.com##.aramasagbox
+puffytr.net##.aramasagbox
+anizm.net##.aramasolbox
+anizm.com##.aramasolbox
+anizm.pro##.aramasolbox
+anizm.tv##.aramasolbox
+anizle.com##.aramasolbox
+anizle.net##.aramasolbox
+puffytr.com##.aramasolbox
+puffytr.net##.aramasolbox
+
 anizm.net##.animeIzleInnerContainer > a
 anizm.com##.animeIzleInnerContainer > a
 anizm.pro##.animeIzleInnerContainer > a
