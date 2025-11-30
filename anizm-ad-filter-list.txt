@@ -1,0 +1,24 @@
+! 🦊 Anizm için reklam filtre listesi.
+! Alan adları: anizm.net, anizm.pro, anizm.tv, anizle.com, anizle.net, puffytr.com, puffytr.net
+! Title: 🦊 Anizm reklam filtresi listesi
+! Description: Anizm siteleri için bir reklam filtre listesi.
+! Author: Sanalzio
+! Homepage: https://github.com/sanalzio/anizm-ad-filter-list/
+! Licence: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/LICENSE
+! DONATE: https://buymeacoffee.com/sanalzio
+! Expires: 3 days (update frequency)
+! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt
+! Version: 30 November 2025
+! Syntax: AdBlock
+
+! Popup engelleyiciler
+/(anizm|anizle|puffytr)\.(com|net|pro|tv)\/js\/po*-u?nd.*?\.js/
+/(anizm|anizle|puffytr)\.(com|net|pro|tv)\/js\/avgrtbdasdwsawqs\.js/
+||information-qot.com/code-process/*.js
+/(anizm|anizle|puffytr)\.(com|net|pro|tv)\/js\/(grnd|aclb|axium|amon).*?\.js/
+
+! Element gizleyiciler
+anizm.net,anizm.com,anizm.pro,anizm.tv,anizle.com,anizle.net,puffytr.com,puffytr.net##a:has(+ #videoFrame):has(img), #videoFrame + a:has(img), .animeIzleInnerContainer > a:has(img), .animeIzleBolumListesi > [id*=\"InviteBox\"]
+
+! Gizlilik amaçlı ölçüm engelleyiciler
+/(anizm|anizle|puffytr)\.(com|net|pro|tv)\/metrics\/?.*/
