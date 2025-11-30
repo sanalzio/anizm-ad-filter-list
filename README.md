@@ -16,6 +16,7 @@ Anizm siteleri için bir reklam filtre listesi.
 - `Özel filtre listesi ekle` başlığının altındaki `"Filtre listesi URL'sini girin
 "` kısmına [`https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt`](https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt) yazıp ekle tuşuna basın.
 - İlk başta gelen `İndirme başarısız oldu` yazısın gördükten sonra `0 saniye önce` yazısı gelene kadar bekleyin.
+- İşlem tamamlandı.
 
 ## uBlock
 - Eklenti simgesine sağ tıklayınca açılan menüden `Seçenekler` ya da `Eklenti Seçenekleri` seçeneğini seçin.
