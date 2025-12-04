@@ -8,7 +8,7 @@
 ! DONATE: https://buymeacoffee.com/sanalzio
 ! Expires: 3 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt
-! Version: 1.0.0
+! Version: 1.0.1
 ! Syntax: AdBlock
 
 
@@ -19,15 +19,48 @@
 
 
 ! Popup engelleyiciler
+
 /(anizm|anizle|puffytr)\.(com|net|pro|tv)\/js\/po*-u?nd.*?\.js/
 /(anizm|anizle|puffytr)\.(com|net|pro|tv)\/js\/avgrtbdasdwsawqs\.js/
 ||information-qot.com/code-process/*.js
 /(anizm|anizle|puffytr)\.(com|net|pro|tv)\/js\/(grnd|aclb|axium|amon).*?\.js/
 
+/js/pund*.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+/amon-3011-gnsazc.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+/aclb.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+/images/*.gif$~3p,domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+/poo-und$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+/po-undr.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+
+||trafficbass.com^
+
+
+
+! Ya bunlar ne işe yarıyor bilmiyorum ama büyük olasılıkla reklam engellenmesi gerekiyor.
+
+/^https?:\/\/[a-z0-9]{5,15}\.(?:com|net)\/tag\.min\.js/$xhr,3p,redirect-rule=nooptext,to=com|net
+/^https?:\/\/[a-z0-9]{5,15}\.(?:com|net)\/tag\.min\.js/$xhr,3p,to=com|net
+nooptext:-1
+nooptext
+*$xhr,3p,method=head,redirect-rule=nooptext:-1,to=~adblockanalytics.com|~doubleclick.net|~pagead2.googlesyndication.com
+/^https?:\/\/[a-z]{8,15}\.com\/$/$xhr,3p,method=head,from=~edu.in|~edu.me|~edu.ng|~edu.nz|~edu.pk|~edu.pm|~edu.so|~edu.sv|~edu.ug|~edu.ws|~gov.gg|~gov.in|~gov.me|~gov.ng|~gov.nz|~gov.pk|~gov.so|~gov.sx|~gov.to|~gov.tv|~gov.ws|~proton.me|~twitch.tv|blog|buzz|cam|cc|click|cyou|dad|download|gg|homes|in|info|ink|life|link|live|lol|me|ng|nz|pk|pm|pro|rest|site|so|soccer|stream|sv|sx|to|today|top|tube|tv|ug|ws|xyz,to=com
+
+
+
 ! Element gizleyiciler
+
 anizm.net,anizm.com,anizm.pro,anizm.tv,anizle.com,anizle.net,puffytr.com,puffytr.net##a:has(+ #videoFrame):has(img), #videoFrame + a:has(img), .animeIzleInnerContainer > a:has(img), .animeIzleBolumListesi > [id*=\"InviteBox\"], #searchBoxAreaLeft, #searchBoxAreaRight, .aramasagbox, .aramasolbox
+##html > div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
+##div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
+puffytr.com,anizm.*,anizle.*##a[href^="https://cutt.ly/"]
+puffytr.com,anizm.*,anizle.*##div[style^="text-align: center;"] > a[target="_blank"]:not([href^="https://anizm./"])
+anizle.*,anizm.*,puffytr.com##a[target="_blank"] > img.img-responsive[src^="/images/"][alt]
+anizle.*,anizm.*,puffytr.com##div[class^="aramas"] > a[target="_blank"]
+
+
 
 ! Gizlilik amaçlı ölçüm engelleyiciler
+
 /(anizm|anizle|puffytr)\.(com|net|pro|tv)\/metrics\/?.*/
 ||googletagmanager.com/gtag/js$xhr,redirect-rule=googletagmanager_gtm.js:5
 ||googletagmanager.com^
@@ -41,6 +74,47 @@ anizm.net,anizm.com,anizm.pro,anizm.tv,anizle.com,anizle.net,puffytr.com,puffytr
 ||ping.anizle.net^
 ||ping.puffytr.com^
 ||ping.puffytr.net^
+googletagmanager_gtm.js:5
+||googletagmanager.com/gtag/js$xhr,redirect-rule=googletagmanager_gtm.js:5
+||googletagmanager.com^
+
+
+
+! Javascript düzenleyiciler
+! Bende pek anlamadım ama sanırım javascript'teki bazı potensiyel hataları veya reklamları engelliyor.
+
+/^[0-9a-z]{5,8}\.(art|cfd|fun|icu|info|live|pro|sbs|world)$/##+js(prevent-window-open, /^ [-\d]/)
+/^[0-9a-z]{5,8}\.(art|cfd|fun|icu|info|live|pro|sbs|world)$/##+js(abort-current-script, Math.random, parseInt(localStorage['\x)
+anizle.*,anizm.*,puffytr.com##+js(set-constant, puShown, true)
+anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, initPu)
+anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
+/^[0-9a-z]{5,8}\.(art|cfd|fun|icu|info|live|pro|sbs|world)$/##+js(prevent-window-open, /^ [-\d]/)
+
+
+! Hmm burası sanırım olur da bir nedenden site lokalden veri aramaya çalışırsa engellesin diye.
+
+!#if env_chromium
+*$permissions=compute-pressure=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+*$permissions=idle-detection=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+*$permissions=keyboard-map=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+! Privacy sandbox - https://developers.google.com/privacy-sandbox/private-advertising/setup/web/permissions-policy
+! Attribution Reporting 
+*$permissions=attribution-reporting=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+! Federated Credential Management 
+! Private Aggregation 
+*$permissions=private-aggregation=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+! Private State Tokens 
+*$permissions=private-state-token-issuance=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+*$permissions=private-state-token-redemption=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+! Protected Audience 
+*$permissions=join-ad-interest-group=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+*$permissions=run-ad-auction=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+! Shared Storage, Storage Access, requestStorageAccessFor = Related to third-party cookies
+! User-Agent Client Hints
+! Topics
+*$permissions=browsing-topics=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+!#endif
+
 
 
 
@@ -177,8 +251,6 @@ anizm.net,anizm.com,anizm.pro,anizm.tv,anizle.com,anizle.net,puffytr.com,puffytr
 ||anizle.net/js/po-*und.js
 ||puffytr.com/js/po-*und.js
 ||puffytr.net/js/po-*und.js
-
-||trafficbass.com^
 
 
 ! Element gizleyiciler
