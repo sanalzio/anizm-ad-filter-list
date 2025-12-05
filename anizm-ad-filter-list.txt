@@ -8,7 +8,7 @@
 ! DONATE: https://buymeacoffee.com/sanalzio
 ! Expires: 3 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt
-! Version: 1.0.2
+! Version: 1.0.3
 ! Syntax: AdBlock
 
 
@@ -27,7 +27,9 @@
 /(anizm|anizle|puffytr)\.(com|net|pro|tv)\/cdn-cgi\/zaraz\/.*?/
 
 /js/pund*.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
-/amon-3011-gnsazc.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+/amon*.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+/amon-*.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+/amon.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 /aclb.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 /images/*.gif$~3p,domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 /poo-und$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
@@ -164,6 +166,24 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||anizle.net/js/axium.js
 ||puffytr.com/js/axium.js
 ||puffytr.net/js/axium.js
+
+||anizm.net/js/axium-*.js
+||anizm.com/js/axium-*.js
+||anizm.pro/js/axium-*.js
+||anizm.tv/js/axium-*.js
+||anizle.com/js/axium-*.js
+||anizle.net/js/axium-*.js
+||puffytr.com/js/axium-*.js
+||puffytr.net/js/axium-*.js
+
+||anizm.net/js/axium*.js
+||anizm.com/js/axium*.js
+||anizm.pro/js/axium*.js
+||anizm.tv/js/axium*.js
+||anizle.com/js/axium*.js
+||anizle.net/js/axium*.js
+||puffytr.com/js/axium*.js
+||puffytr.net/js/axium*.js
 
 ||anizm.net/js/aclb.js
 ||anizm.com/js/aclb.js
