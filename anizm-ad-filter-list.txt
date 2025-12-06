@@ -8,7 +8,7 @@
 ! DONATE: https://buymeacoffee.com/sanalzio
 ! Expires: 3 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt
-! Version: 1.0.3
+! Version: 1.0.4
 ! Syntax: AdBlock
 
 
@@ -36,6 +36,8 @@
 /po-undr.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 
 ||trafficbass.com^
+||hdbkell.com^
+||fxpey.com^
 
 ||oodseengairgy.net^
 ||foothaunestoor.net^
@@ -43,6 +45,7 @@
 ||tzegilo.com^
 ||jnbhi.com^
 ||yicvfyduwxibce.com^
+||noojoonozuzu.com^
 
 
 
