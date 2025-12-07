@@ -6,7 +6,7 @@
 ! Homepage: https://github.com/sanalzio/anizm-ad-filter-list/
 ! Licence: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/LICENSE
 ! DONATE: https://buymeacoffee.com/sanalzio
-! Expires: 3 days (update frequency)
+! Expires: 1 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt
 ! Version: 1.0.4
 ! Syntax: AdBlock
@@ -20,11 +20,12 @@
 
 ! Popup engelleyiciler
 
-/(anizm|anizle|puffytr)\.(com|net|pro|tv)\/js\/po*-u?nd.*?\.js/
-/(anizm|anizle|puffytr)\.(com|net|pro|tv)\/js\/avgrtbdasdwsawqs\.js/
+/(anizm|anizle|puffytr)\.(com|net|pro|tv|com\.tr)\/js\/po*-u?nd.*?\.js/
+/(anizm|anizle|puffytr)\.(com|net|pro|tv|com\.tr)\/js\/avgrtbdasdwsawqs\.js/
 ||information-qot.com/code-process/*.js
-/(anizm|anizle|puffytr)\.(com|net|pro|tv)\/js\/(grnd|aclb|axium|amon).*?\.js/
-/(anizm|anizle|puffytr)\.(com|net|pro|tv)\/cdn-cgi\/zaraz\/.*?/
+/(anizm|anizle|puffytr)\.(com|net|pro|tv|com\.tr)\/js\/(grnd|aclb|axium|amon).*?\.js/
+/(anizm|anizle|puffytr)\.(com|net|pro|tv|com\.tr)\/cdn-cgi\/zaraz\/.*?/
+/cdn-cgi/zaraz/*
 
 /js/pund*.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 /amon*.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
@@ -35,10 +36,11 @@
 /poo-und$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 /po-undr.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 
+/^https?:\/\/[a-z]{8,15}\.com\/$/$xhr,3p,method=head,header=access-control-expose-headers:/X-DirectionPartner-Id/,to=com
+
 ||trafficbass.com^
 ||hdbkell.com^
 ||fxpey.com^
-
 ||oodseengairgy.net^
 ||foothaunestoor.net^
 ||bnhjfgsw.com^
@@ -46,6 +48,9 @@
 ||jnbhi.com^
 ||yicvfyduwxibce.com^
 ||noojoonozuzu.com^
+||whebackipsix.com^
+||anlesekc.com^
+||jnbhi.com^
 
 
 
@@ -62,29 +67,34 @@ nooptext
 
 ! Element gizleyiciler
 
-anizm.net,anizm.com,anizm.pro,anizm.tv,anizle.com,anizle.net,puffytr.com,puffytr.net##a:has(+ #videoFrame):has(img), #videoFrame + a:has(img), .animeIzleInnerContainer > a:has(img), .animeIzleBolumListesi > [id*=\"InviteBox\"], #searchBoxAreaLeft, #searchBoxAreaRight, .aramasagbox, .aramasolbox
-##html > div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
-##html > div[style*="z-index: 2147483647"]
-##html > div[style*="z-index:2147483647"]
-##html > div[style*="z-index : 2147483647"]
-##html > div[style*="z-index :2147483647"]
-##div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
-puffytr.com,anizm.*,anizle.*##a[href^="https://cutt.ly/"]
-puffytr.com,anizm.*,anizle.*##div[style^="text-align: center;"] > a[target="_blank"]:not([href^="https://anizm./"])
-anizle.*,anizm.*,puffytr.com##a[target="_blank"] > img.img-responsive[src^="/images/"][alt]
-anizle.*,anizm.*,puffytr.com##div[class^="aramas"] > a[target="_blank"]
+anizm.net,anizm.com,anizm.com.tr,anizm.pro,anizm.tv,anizle.com,anizle.net,puffytr.com,puffytr.net##a:has(+ #videoFrame):has(img), #videoFrame + a:has(img), .animeIzleInnerContainer > a:has(img), .animeIzleBolumListesi > [id*="InviteBox"], #searchBoxAreaLeft, #searchBoxAreaRight, .aramasagbox, #searchBoxAreaRight.aramasagbox, .aramasolbox, #searchBoxAreaLeft.aramasolbox
+puffytr.*,anizm.*,anizle.*##a:has(+ #videoFrame):has(img), #videoFrame + a:has(img), .animeIzleInnerContainer > a:has(img), .animeIzleBolumListesi > [id*="InviteBox"], #searchBoxAreaLeft, #searchBoxAreaRight, .aramasagbox, .aramasolbox
+! ##html > div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
+! ##html > div[style*="z-index: 2147483647"]
+! ##html > div[style*="z-index:2147483647"]
+! ##html > div[style*="z-index : 2147483647"]
+! ##html > div[style*="z-index :2147483647"]
+! ##div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
+anizm.net,anizm.com,anizm.com.tr,anizm.pro,anizm.tv,anizle.com,anizle.net,puffytr.com,puffytr.net##html > div
+puffytr.*,anizm.*,anizle.*##html > div
+puffytr.*,anizm.*,anizle.*##a[href^="https://cutt.ly/"]
+puffytr.*,anizm.*,anizle.*##div[style^="text-align: center;"] > a[target="_blank"]:not([href^="https://anizm./"])
+anizle.*,anizm.*,puffytr.*##a[target="_blank"] > img.img-responsive[src^="/images/"][alt]
+anizle.*,anizm.*,puffytr.*##div[class^="aramas"] > a[target="_blank"]
+/images/*.gif$1p,from=anizle.*|anizle.com|anizle.net|anizm.*|anizm.com.tr|anizm.net|anizm.pro|puffytr.com|puffytr.*
 
 
 
 ! Gizlilik amaçlı ölçüm engelleyiciler
 
-/(anizm|anizle|puffytr)\.(com|net|pro|tv)\/metrics\/?.*/
+/(anizm|anizle|puffytr)\.(com|net|pro|tv|com\.tr)\/metrics\/?.*/
 ||googletagmanager.com/gtag/js$xhr,redirect-rule=googletagmanager_gtm.js:5
 ||googletagmanager.com^
 ||cloudflareinsights.com^
 ||anizmplayer.com/gMetrics/
 ||ping.anizm.net^
 ||ping.anizm.com^
+||ping.anizm.com.tr^
 ||ping.anizm.pro^
 ||ping.anizm.tv^
 ||ping.anizle.com^
@@ -102,9 +112,9 @@ googletagmanager_gtm.js:5
 
 /^[0-9a-z]{5,8}\.(art|cfd|fun|icu|info|live|pro|sbs|world)$/##+js(prevent-window-open, /^ [-\d]/)
 /^[0-9a-z]{5,8}\.(art|cfd|fun|icu|info|live|pro|sbs|world)$/##+js(abort-current-script, Math.random, parseInt(localStorage['\x)
-anizle.*,anizm.*,puffytr.com##+js(set-constant, puShown, true)
-anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, initPu)
-anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
+anizle.*,anizm.*,puffytr.*##+js(set-constant, puShown, true)
+anizle.*,anizm.*,puffytr.*##+js(abort-on-property-read, initPu)
+anizle.*,anizm.*,puffytr.*##+js(abort-on-property-read, aclib)
 /^[0-9a-z]{5,8}\.(art|cfd|fun|icu|info|live|pro|sbs|world)$/##+js(prevent-window-open, /^ [-\d]/)
 
 
@@ -144,6 +154,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 
 ! Popup engelleyiciler
 ||anizm.net/js/amon*.js
+||anizm.com.tr/js/amon*.js
 ||anizm.com/js/amon*.js
 ||anizm.pro/js/amon*.js
 ||anizm.tv/js/amon*.js
@@ -153,6 +164,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/amon*.js
 
 ||anizm.net/js/amon-*.js
+||anizm.com.tr/js/amon-*.js
 ||anizm.com/js/amon-*.js
 ||anizm.pro/js/amon-*.js
 ||anizm.tv/js/amon-*.js
@@ -162,6 +174,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/amon-*.js
 
 ||anizm.net/js/axium.js
+||anizm.com.tr/js/axium.js
 ||anizm.com/js/axium.js
 ||anizm.pro/js/axium.js
 ||anizm.tv/js/axium.js
@@ -171,6 +184,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/axium.js
 
 ||anizm.net/js/axium-*.js
+||anizm.com.tr/js/axium-*.js
 ||anizm.com/js/axium-*.js
 ||anizm.pro/js/axium-*.js
 ||anizm.tv/js/axium-*.js
@@ -180,6 +194,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/axium-*.js
 
 ||anizm.net/js/axium*.js
+||anizm.com.tr/js/axium*.js
 ||anizm.com/js/axium*.js
 ||anizm.pro/js/axium*.js
 ||anizm.tv/js/axium*.js
@@ -189,6 +204,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/axium*.js
 
 ||anizm.net/js/aclb.js
+||anizm.com.tr/js/aclb.js
 ||anizm.com/js/aclb.js
 ||anizm.pro/js/aclb.js
 ||anizm.tv/js/aclb.js
@@ -198,6 +214,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/aclb.js
 
 ||anizm.net/js/avgrtbdasdwsawqs.js
+||anizm.com.tr/js/avgrtbdasdwsawqs.js
 ||anizm.com/js/avgrtbdasdwsawqs.js
 ||anizm.pro/js/avgrtbdasdwsawqs.js
 ||anizm.tv/js/avgrtbdasdwsawqs.js
@@ -207,6 +224,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/avgrtbdasdwsawqs.js
 
 ||anizm.net/js/grnd.js
+||anizm.com.tr/js/grnd.js
 ||anizm.com/js/grnd.js
 ||anizm.pro/js/grnd.js
 ||anizm.tv/js/grnd.js
@@ -216,6 +234,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/grnd.js
 
 ||anizm.net/js/grnd*.js
+||anizm.com.tr/js/grnd*.js
 ||anizm.com/js/grnd*.js
 ||anizm.pro/js/grnd*.js
 ||anizm.tv/js/grnd*.js
@@ -225,6 +244,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/grnd*.js
 
 ||anizm.net/js/grnd_*.js
+||anizm.com.tr/js/grnd_*.js
 ||anizm.com/js/grnd_*.js
 ||anizm.pro/js/grnd_*.js
 ||anizm.tv/js/grnd_*.js
@@ -234,6 +254,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/grnd_*.js
 
 ||anizm.net/js/grnd_pp_*.js
+||anizm.com.tr/js/grnd_pp_*.js
 ||anizm.com/js/grnd_pp_*.js
 ||anizm.pro/js/grnd_pp_*.js
 ||anizm.tv/js/grnd_pp_*.js
@@ -243,6 +264,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/grnd_pp_*.js
 
 ||anizm.net/js/pund.js
+||anizm.com.tr/js/pund.js
 ||anizm.com/js/pund.js
 ||anizm.pro/js/pund.js
 ||anizm.tv/js/pund.js
@@ -252,6 +274,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/pund.js
 
 ||anizm.net/js/p*und.js
+||anizm.com.tr/js/p*und.js
 ||anizm.com/js/p*und.js
 ||anizm.pro/js/p*und.js
 ||anizm.tv/js/p*und.js
@@ -261,6 +284,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/p*und.js
 
 ||anizm.net/js/po*und.js
+||anizm.com.tr/js/po*und.js
 ||anizm.com/js/po*und.js
 ||anizm.pro/js/po*und.js
 ||anizm.tv/js/po*und.js
@@ -270,6 +294,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/po*und.js
 
 ||anizm.net/js/po*-und.js
+||anizm.com.tr/js/po*-und.js
 ||anizm.com/js/po*-und.js
 ||anizm.pro/js/po*-und.js
 ||anizm.tv/js/po*-und.js
@@ -279,6 +304,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/po*-und.js
 
 ||anizm.net/js/po-*und.js
+||anizm.com.tr/js/po-*und.js
 ||anizm.com/js/po-*und.js
 ||anizm.pro/js/po-*und.js
 ||anizm.tv/js/po-*und.js
@@ -288,6 +314,7 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.net/js/po-*und.js
 
 ||anizm.net/cdn-cgi/zaraz/*
+||anizm.com.tr/cdn-cgi/zaraz/*
 ||anizm.com/cdn-cgi/zaraz/*
 ||anizm.pro/cdn-cgi/zaraz/*
 ||anizm.tv/cdn-cgi/zaraz/*
@@ -296,9 +323,13 @@ anizle.*,anizm.*,puffytr.com##+js(abort-on-property-read, aclib)
 ||puffytr.com/cdn-cgi/zaraz/*
 ||puffytr.net/cdn-cgi/zaraz/*
 
+||*.com/tag.min.js$xhr,third-party
+||*.net/tag.min.js$xhr,third-party
+
 
 ! Element gizleyiciler
 anizm.net###searchBoxAreaLeft
+anizm.com.tr###searchBoxAreaLeft
 anizm.com###searchBoxAreaLeft
 anizm.pro###searchBoxAreaLeft
 anizm.tv###searchBoxAreaLeft
@@ -307,6 +338,7 @@ anizle.net###searchBoxAreaLeft
 puffytr.com###searchBoxAreaLeft
 puffytr.net###searchBoxAreaLeft
 anizm.net###searchBoxAreaRight
+anizm.com.tr###searchBoxAreaRight
 anizm.com###searchBoxAreaRight
 anizm.pro###searchBoxAreaRight
 anizm.tv###searchBoxAreaRight
@@ -315,6 +347,7 @@ anizle.net###searchBoxAreaRight
 puffytr.com###searchBoxAreaRight
 puffytr.net###searchBoxAreaRight
 anizm.net##.aramasagbox
+anizm.com.tr##.aramasagbox
 anizm.com##.aramasagbox
 anizm.pro##.aramasagbox
 anizm.tv##.aramasagbox
@@ -323,6 +356,7 @@ anizle.net##.aramasagbox
 puffytr.com##.aramasagbox
 puffytr.net##.aramasagbox
 anizm.net##.aramasolbox
+anizm.com.tr##.aramasolbox
 anizm.com##.aramasolbox
 anizm.pro##.aramasolbox
 anizm.tv##.aramasolbox
@@ -332,6 +366,7 @@ puffytr.com##.aramasolbox
 puffytr.net##.aramasolbox
 
 anizm.net##.animeIzleInnerContainer > a
+anizm.com.tr##.animeIzleInnerContainer > a
 anizm.com##.animeIzleInnerContainer > a
 anizm.pro##.animeIzleInnerContainer > a
 anizm.tv##.animeIzleInnerContainer > a
@@ -341,9 +376,29 @@ puffytr.com##.animeIzleInnerContainer > a
 puffytr.net##.animeIzleInnerContainer > a
 ! Evet burası bayağı bi salak saçma bir şey olmuş gibi duruyor. Eğer bölüm sayfasında birşeyler ters gidiyorsa önce bi reklam engelleyiciyi kapatıp denemenizi tavsiye ediyorum.
 
+anizm.net###discordInviteBox
+anizm.com.tr###discordInviteBox
+anizm.com###discordInviteBox
+anizm.pro###discordInviteBox
+anizm.tv###discordInviteBox
+anizle.com###discordInviteBox
+anizle.net###discordInviteBox
+puffytr.com###discordInviteBox
+puffytr.net###discordInviteBox
+anizm.net###telegramInviteBox
+anizm.com.tr###telegramInviteBox
+anizm.com###telegramInviteBox
+anizm.pro###telegramInviteBox
+anizm.tv###telegramInviteBox
+anizle.com###telegramInviteBox
+anizle.net###telegramInviteBox
+puffytr.com###telegramInviteBox
+puffytr.net###telegramInviteBox
+
 
 ! Gizlilik amaçlı ölçüm engelleyiciler
 ||anizm.net/metrics
+||anizm.com.tr/metrics
 ||anizm.com/metrics
 ||anizm.pro/metrics
 ||anizm.tv/metrics
