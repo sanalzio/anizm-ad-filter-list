@@ -8,7 +8,7 @@
 ! DONATE: https://buymeacoffee.com/sanalzio
 ! Expires: 1 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt
-! Version: 1.0.4
+! Version: 1.0.5
 ! Syntax: AdBlock
 
 
@@ -51,6 +51,7 @@
 ||whebackipsix.com^
 ||anlesekc.com^
 ||jnbhi.com^
+||tzegilo.com^
 
 
 
@@ -325,6 +326,26 @@ anizle.*,anizm.*,puffytr.*##+js(abort-on-property-read, aclib)
 
 ||*.com/tag.min.js$xhr,third-party
 ||*.net/tag.min.js$xhr,third-party
+||*.com/stattag.js$xhr,third-party
+||*.net/stattag.js$xhr,third-party
+||*.com/stattags.js$xhr,third-party
+||*.net/stattags.js$xhr,third-party
+
+*/tag.js$xhr,3p,redirect-rule=nooptext,to=com|net
+*/tags.js$xhr,3p,redirect-rule=nooptext,to=com|net
+*/tag.min.js$xhr,3p,redirect-rule=nooptext,to=com|net
+*/stattag.js$xhr,3p,redirect-rule=nooptext,to=com|net
+*/stattags.js$xhr,3p,redirect-rule=nooptext,to=com|net
+*/tag.js$xhr,3p,to=com|net
+*/tags.js$xhr,3p,to=com|net
+*/tag.min.js$xhr,3p,to=com|net
+*/stattag.js$xhr,3p,to=com|net
+*/stattags.js$xhr,3p,to=com|net
+*/tag.js$script,domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+*/tags.js$script,domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+*/tag.min.js$script,domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+*/stattag.js$script,domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+*/stattags.js$script,domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 
 
 ! Element gizleyiciler
@@ -394,6 +415,57 @@ anizle.com###telegramInviteBox
 anizle.net###telegramInviteBox
 puffytr.com###telegramInviteBox
 puffytr.net###telegramInviteBox
+
+
+anizm.net##html > div
+anizm.com.tr##html > div
+anizm.com##html > div
+anizm.pro##html > div
+anizm.tv##html > div
+anizle.com##html > div
+anizle.net##html > div
+puffytr.com##html > div
+puffytr.net##html > div
+
+anizm.net##a[href^="https://cutt.ly/"]
+anizm.com.tr##a[href^="https://cutt.ly/"]
+anizm.com##a[href^="https://cutt.ly/"]
+anizm.pro##a[href^="https://cutt.ly/"]
+anizm.tv##a[href^="https://cutt.ly/"]
+anizle.com##a[href^="https://cutt.ly/"]
+anizle.net##a[href^="https://cutt.ly/"]
+puffytr.com##a[href^="https://cutt.ly/"]
+puffytr.net##a[href^="https://cutt.ly/"]
+
+anizm.net##div[style^="text-align: center;"] > a[target="_blank"]:not([href^="https://anizm./"])
+anizm.com.tr##div[style^="text-align: center;"] > a[target="_blank"]:not([href^="https://anizm./"])
+anizm.com##div[style^="text-align: center;"] > a[target="_blank"]:not([href^="https://anizm./"])
+anizm.pro##div[style^="text-align: center;"] > a[target="_blank"]:not([href^="https://anizm./"])
+anizm.tv##div[style^="text-align: center;"] > a[target="_blank"]:not([href^="https://anizm./"])
+anizle.com##div[style^="text-align: center;"] > a[target="_blank"]:not([href^="https://anizle./"])
+anizle.net##div[style^="text-align: center;"] > a[target="_blank"]:not([href^="https://anizle./"])
+puffytr.com##div[style^="text-align: center;"] > a[target="_blank"]:not([href^="https://puffytr./"])
+puffytr.net##div[style^="text-align: center;"] > a[target="_blank"]:not([href^="https://puffytr./"])
+
+anizm.net##a[target="_blank"] > img.img-responsive[src^="/images/"][alt]
+anizm.com.tr##a[target="_blank"] > img.img-responsive[src^="/images/"][alt]
+anizm.com##a[target="_blank"] > img.img-responsive[src^="/images/"][alt]
+anizm.pro##a[target="_blank"] > img.img-responsive[src^="/images/"][alt]
+anizm.tv##a[target="_blank"] > img.img-responsive[src^="/images/"][alt]
+anizle.com##a[target="_blank"] > img.img-responsive[src^="/images/"][alt]
+anizle.net##a[target="_blank"] > img.img-responsive[src^="/images/"][alt]
+puffytr.com##a[target="_blank"] > img.img-responsive[src^="/images/"][alt]
+puffytr.net##a[target="_blank"] > img.img-responsive[src^="/images/"][alt]
+
+anizm.net##div[class^="aramas"] > a[target="_blank"]
+anizm.com.tr##div[class^="aramas"] > a[target="_blank"]
+anizm.com##div[class^="aramas"] > a[target="_blank"]
+anizm.pro##div[class^="aramas"] > a[target="_blank"]
+anizm.tv##div[class^="aramas"] > a[target="_blank"]
+anizle.com##div[class^="aramas"] > a[target="_blank"]
+anizle.net##div[class^="aramas"] > a[target="_blank"]
+puffytr.com##div[class^="aramas"] > a[target="_blank"]
+puffytr.net##div[class^="aramas"] > a[target="_blank"]
 
 
 ! Gizlilik amaçlı ölçüm engelleyiciler
