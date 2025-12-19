@@ -8,7 +8,7 @@
 ! DONATE: https://buymeacoffee.com/sanalzio
 ! Expires: 1 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt
-! Version: 1.0.5
+! Version: 1.0.6
 ! Syntax: AdBlock
 
 
@@ -38,6 +38,8 @@
 
 /^https?:\/\/[a-z]{8,15}\.com\/$/$xhr,3p,method=head,header=access-control-expose-headers:/X-DirectionPartner-Id/,to=com
 
+||cdn.traffmovie.com^
+
 ||trafficbass.com^
 ||hdbkell.com^
 ||fxpey.com^
@@ -52,6 +54,8 @@
 ||anlesekc.com^
 ||jnbhi.com^
 ||tzegilo.com^
+||excavatenearbywand.com^
+||oxlhcuol.com^
 
 
 
@@ -76,8 +80,8 @@ puffytr.*,anizm.*,anizle.*##a:has(+ #videoFrame):has(img), #videoFrame + a:has(i
 ! ##html > div[style*="z-index : 2147483647"]
 ! ##html > div[style*="z-index :2147483647"]
 ! ##div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
-anizm.net,anizm.com,anizm.com.tr,anizm.pro,anizm.tv,anizle.com,anizle.net,puffytr.com,puffytr.net##html > div
-puffytr.*,anizm.*,anizle.*##html > div
+anizm.net,anizm.com,anizm.com.tr,anizm.pro,anizm.tv,anizle.com,anizle.net,puffytr.com,puffytr.net##html > div:not(#eruda,.__chobitsu-hide__)
+puffytr.*,anizm.*,anizle.*##html > div:not(#eruda,.__chobitsu-hide__)
 puffytr.*,anizm.*,anizle.*##a[href^="https://cutt.ly/"]
 puffytr.*,anizm.*,anizle.*##div[style^="text-align: center;"] > a[target="_blank"]:not([href^="https://anizm./"])
 anizle.*,anizm.*,puffytr.*##a[target="_blank"] > img.img-responsive[src^="/images/"][alt]
@@ -417,15 +421,15 @@ puffytr.com###telegramInviteBox
 puffytr.net###telegramInviteBox
 
 
-anizm.net##html > div
-anizm.com.tr##html > div
-anizm.com##html > div
-anizm.pro##html > div
-anizm.tv##html > div
-anizle.com##html > div
-anizle.net##html > div
-puffytr.com##html > div
-puffytr.net##html > div
+anizm.net##html > div:not(#eruda,.__chobitsu-hide__)
+anizm.com.tr##html > div:not(#eruda,.__chobitsu-hide__)
+anizm.com##html > div:not(#eruda,.__chobitsu-hide__)
+anizm.pro##html > div:not(#eruda,.__chobitsu-hide__)
+anizm.tv##html > div:not(#eruda,.__chobitsu-hide__)
+anizle.com##html > div:not(#eruda,.__chobitsu-hide__)
+anizle.net##html > div:not(#eruda,.__chobitsu-hide__)
+puffytr.com##html > div:not(#eruda,.__chobitsu-hide__)
+puffytr.net##html > div:not(#eruda,.__chobitsu-hide__)
 
 anizm.net##a[href^="https://cutt.ly/"]
 anizm.com.tr##a[href^="https://cutt.ly/"]
