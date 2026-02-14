@@ -8,7 +8,7 @@
 ! DONATE: https://buymeacoffee.com/sanalzio
 ! Expires: 1 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt
-! Version: 1.0.10
+! Version: 1.0.11
 ! Syntax: AdBlock
 
 
@@ -37,8 +37,8 @@
 /po-undr.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 
 /js/aahnucytsbnjfhsdusgg.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
-
 /js/vbftvbdysbysvyvsdsdvs.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+/js/dnsjnajadnsjndjgfas.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 
 /^https?:\/\/[a-z]{8,15}\.com\/$/$xhr,3p,method=head,header=access-control-expose-headers:/X-DirectionPartner-Id/,to=com
 
@@ -324,8 +324,8 @@ anizle.*,anizm.*,puffytr.*##+js(abort-on-property-read, aclib)
 
 ! Evet şimdilik tehlikeli gibi gözüküyorlar, sorun çıkartırlarsa kapatırım.
 /js/aahnucytsbnjfhsdusgg.js
-
 /js/vbftvbdysbysvyvsdsdvs.js
+/js/dnsjnajadnsjndjgfas.js
 
 ||anizm.net/cdn-cgi/zaraz/*
 ||anizm.com.tr/cdn-cgi/zaraz/*
