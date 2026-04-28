@@ -1,0 +1,170 @@
+! 🦊 Anizm için reklam filtre listesi.
+! Alan adları: anizm.net, anizm.pro, anizm.tv, anizle.com, anizle.net, puffytr.com, puffytr.net
+! Title: 🦊 Anizm reklam filtresi listesi
+! Description: Anizm siteleri için bir reklam filtre listesi.
+! Author: Sanalzio
+! Homepage: https://github.com/sanalzio/anizm-ad-filter-list/
+! Licence: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/LICENSE
+! DONATE: https://buymeacoffee.com/sanalzio
+! Expires: 1 days (update frequency)
+! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-aggressive-ad-filter-list.txt
+! Version: 1.0.0
+! Syntax: AdBlock
+
+
+
+
+
+
+
+
+! Element gizleyiciler
+
+anizle.*,anizm.*,puffytr.*##main>footer>.populerAnimeler
+anizle.*,anizm.*,puffytr.*##main>footer>.bizKimiz>.social
+anizle.*,anizm.*,puffytr.*##main .seo-content-block
+anizle.*,anizm.*,puffytr.*###episodes>.duyuruContainer
+anizle.*,anizm.*,puffytr.*##.anasayfaListe>h1
+anizle.*,anizm.*,puffytr.*##.anasayfaListe>p
+anizle.*,anizm.*,puffytr.*##header > .content .anizm-nav-links > li:has(a:not([href*="anizm"],[href*="anizle"],[href*="puffytr"]))
+anizle.*,anizm.*,puffytr.*##.anizm-portal-menu .item[href*="magaza"]
+anizle.*,anizm.*,puffytr.*##.anizm-portal-menu a.item:nth-of-type(5)
+anizle.*,anizm.*,puffytr.*##.anizm-portal-menu a.item:nth-child(6)
+anizle.*,anizm.*,puffytr.*##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+anizle.*,anizm.*,puffytr.*###pushNotifyBox
+anizle.*,anizm.*,puffytr.*###pushDeniedModal
+
+
+
+
+! Uyumluluk için basit şekilde yazılmışları:
+
+anizm.net###pushDeniedModal
+anizm.com.tr###pushDeniedModal
+anizm.com###pushDeniedModal
+anizm.pro###pushDeniedModal
+anizm.tv###pushDeniedModal
+anizle.com###pushDeniedModal
+anizle.net###pushDeniedModal
+puffytr.com###pushDeniedModal
+puffytr.net###pushDeniedModal
+
+anizm.net###pushNotifyBox
+anizm.com.tr###pushNotifyBox
+anizm.com###pushNotifyBox
+anizm.pro###pushNotifyBox
+anizm.tv###pushNotifyBox
+anizle.com###pushNotifyBox
+anizle.net###pushNotifyBox
+puffytr.com###pushNotifyBox
+puffytr.net###pushNotifyBox
+
+anizm.net##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+anizm.com.tr##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+anizm.com##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+anizm.pro##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+anizm.tv##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+anizle.com##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+anizle.net##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+puffytr.com##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+puffytr.net##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+
+anizm.net##.anizm-portal-menu a.item:nth-child(6)
+anizm.com.tr##.anizm-portal-menu a.item:nth-child(6)
+anizm.com##.anizm-portal-menu a.item:nth-child(6)
+anizm.pro##.anizm-portal-menu a.item:nth-child(6)
+anizm.tv##.anizm-portal-menu a.item:nth-child(6)
+anizle.com##.anizm-portal-menu a.item:nth-child(6)
+anizle.net##.anizm-portal-menu a.item:nth-child(6)
+puffytr.com##.anizm-portal-menu a.item:nth-child(6)
+puffytr.net##.anizm-portal-menu a.item:nth-child(6)
+
+anizm.net##.anizm-portal-menu a.item:nth-of-type(5)
+anizm.com.tr##.anizm-portal-menu a.item:nth-of-type(5)
+anizm.com##.anizm-portal-menu a.item:nth-of-type(5)
+anizm.pro##.anizm-portal-menu a.item:nth-of-type(5)
+anizm.tv##.anizm-portal-menu a.item:nth-of-type(5)
+anizle.com##.anizm-portal-menu a.item:nth-of-type(5)
+anizle.net##.anizm-portal-menu a.item:nth-of-type(5)
+puffytr.com##.anizm-portal-menu a.item:nth-of-type(5)
+puffytr.net##.anizm-portal-menu a.item:nth-of-type(5)
+
+anizm.net##.anizm-portal-menu .item[href*="magaza"]
+anizm.com.tr##.anizm-portal-menu .item[href*="magaza"]
+anizm.com##.anizm-portal-menu .item[href*="magaza"]
+anizm.pro##.anizm-portal-menu .item[href*="magaza"]
+anizm.tv##.anizm-portal-menu .item[href*="magaza"]
+anizle.com##.anizm-portal-menu .item[href*="magaza"]
+anizle.net##.anizm-portal-menu .item[href*="magaza"]
+puffytr.com##.anizm-portal-menu .item[href*="magaza"]
+puffytr.net##.anizm-portal-menu .item[href*="magaza"]
+
+anizm.net##header > .content .anizm-nav-links > li:has(a:not([href*="anizm"],[href*="anizle"],[href*="puffytr"]))
+anizm.com.tr##header > .content .anizm-nav-links > li:has(a:not([href*="anizm"],[href*="anizle"],[href*="puffytr"]))
+anizm.com##header > .content .anizm-nav-links > li:has(a:not([href*="anizm"],[href*="anizle"],[href*="puffytr"]))
+anizm.pro##header > .content .anizm-nav-links > li:has(a:not([href*="anizm"],[href*="anizle"],[href*="puffytr"]))
+anizm.tv##header > .content .anizm-nav-links > li:has(a:not([href*="anizm"],[href*="anizle"],[href*="puffytr"]))
+anizle.com##header > .content .anizm-nav-links > li:has(a:not([href*="anizm"],[href*="anizle"],[href*="puffytr"]))
+anizle.net##header > .content .anizm-nav-links > li:has(a:not([href*="anizm"],[href*="anizle"],[href*="puffytr"]))
+puffytr.com##header > .content .anizm-nav-links > li:has(a:not([href*="anizm"],[href*="anizle"],[href*="puffytr"]))
+puffytr.net##header > .content .anizm-nav-links > li:has(a:not([href*="anizm"],[href*="anizle"],[href*="puffytr"]))
+
+anizm.net##.anasayfaListe>p
+anizm.com.tr##.anasayfaListe>p
+anizm.com##.anasayfaListe>p
+anizm.pro##.anasayfaListe>p
+anizm.tv##.anasayfaListe>p
+anizle.com##.anasayfaListe>p
+anizle.net##.anasayfaListe>p
+puffytr.com##.anasayfaListe>p
+puffytr.net##.anasayfaListe>p
+
+anizm.net##.anasayfaListe>h1
+anizm.com.tr##.anasayfaListe>h1
+anizm.com##.anasayfaListe>h1
+anizm.pro##.anasayfaListe>h1
+anizm.tv##.anasayfaListe>h1
+anizle.com##.anasayfaListe>h1
+anizle.net##.anasayfaListe>h1
+puffytr.com##.anasayfaListe>h1
+puffytr.net##.anasayfaListe>h1
+
+anizm.net###episodes>.duyuruContainer
+anizm.com.tr###episodes>.duyuruContainer
+anizm.com###episodes>.duyuruContainer
+anizm.pro###episodes>.duyuruContainer
+anizm.tv###episodes>.duyuruContainer
+anizle.com###episodes>.duyuruContainer
+anizle.net###episodes>.duyuruContainer
+puffytr.com###episodes>.duyuruContainer
+puffytr.net###episodes>.duyuruContainer
+
+anizm.net##main .seo-content-block
+anizm.com.tr##main .seo-content-block
+anizm.com##main .seo-content-block
+anizm.pro##main .seo-content-block
+anizm.tv##main .seo-content-block
+anizle.com##main .seo-content-block
+anizle.net##main .seo-content-block
+puffytr.com##main .seo-content-block
+puffytr.net##main .seo-content-block
+
+anizm.net##main>footer>.bizKimiz>.social
+anizm.com.tr##main>footer>.bizKimiz>.social
+anizm.com##main>footer>.bizKimiz>.social
+anizm.pro##main>footer>.bizKimiz>.social
+anizm.tv##main>footer>.bizKimiz>.social
+anizle.com##main>footer>.bizKimiz>.social
+anizle.net##main>footer>.bizKimiz>.social
+puffytr.com##main>footer>.bizKimiz>.social
+puffytr.net##main>footer>.bizKimiz>.social
+
+anizm.net##main>footer>.populerAnimeler
+anizm.com.tr##main>footer>.populerAnimeler
+anizm.com##main>footer>.populerAnimeler
+anizm.pro##main>footer>.populerAnimeler
+anizm.tv##main>footer>.populerAnimeler
+anizle.com##main>footer>.populerAnimeler
+anizle.net##main>footer>.populerAnimeler
+puffytr.com##main>footer>.populerAnimeler
+puffytr.net##main>footer>.populerAnimeler

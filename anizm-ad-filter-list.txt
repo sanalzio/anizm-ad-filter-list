@@ -8,7 +8,7 @@
 ! DONATE: https://buymeacoffee.com/sanalzio
 ! Expires: 1 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt
-! Version: 1.0.11
+! Version: 1.1.0
 ! Syntax: AdBlock
 
 
@@ -37,6 +37,7 @@
 /po-undr.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 
 /js/aahnucytsbnjfhsdusgg.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+
 /js/vbftvbdysbysvyvsdsdvs.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 /js/dnsjnajadnsjndjgfas.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 
@@ -113,6 +114,10 @@ anizle.*,anizm.*,puffytr.*##div[class^="aramas"] > a[target="_blank"]
 googletagmanager_gtm.js:5
 ||googletagmanager.com/gtag/js$xhr,redirect-rule=googletagmanager_gtm.js:5
 ||googletagmanager.com^
+
+||onclckmn.com^
+
+/sngtmub/s.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 
 
 
@@ -326,6 +331,17 @@ anizle.*,anizm.*,puffytr.*##+js(abort-on-property-read, aclib)
 /js/aahnucytsbnjfhsdusgg.js
 /js/vbftvbdysbysvyvsdsdvs.js
 /js/dnsjnajadnsjndjgfas.js
+/sngtmub/s.js
+
+||anizm.net/sngtmub/s.js
+||anizm.com.tr/sngtmub/s.js
+||anizm.com/sngtmub/s.js
+||anizm.pro/sngtmub/s.js
+||anizm.tv/sngtmub/s.js
+||anizle.com/sngtmub/s.js
+||anizle.net/sngtmub/s.js
+||puffytr.com/sngtmub/s.js
+||puffytr.net/sngtmub/s.js
 
 ||anizm.net/cdn-cgi/zaraz/*
 ||anizm.com.tr/cdn-cgi/zaraz/*
