@@ -34,4 +34,4 @@ Anizm siteleri için bir reklam filtre listesi.
 # + Agresif reklam filtreleri
 Reklam ile göz kirliliği elementleri arasında kalan elementleri gizlemek için yazılan ayrı bir filtre listesidir. Diğer listenin yanında kullanılması tavsiye edilir.
 <br>
-<strong>"[`https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt`](https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt)"</strong>
+<strong>"[`https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-aggressive-ad-filter-list.txt`](https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-aggressive-ad-filter-list.txt)"</strong>

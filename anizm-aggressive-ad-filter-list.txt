@@ -8,7 +8,7 @@
 ! DONATE: https://buymeacoffee.com/sanalzio
 ! Expires: 1 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-aggressive-ad-filter-list.txt
-! Version: 1.0.0
+! Version: 1.0.1
 ! Syntax: AdBlock
 
 
@@ -22,7 +22,6 @@
 
 anizle.*,anizm.*,puffytr.*##main>footer>.populerAnimeler
 anizle.*,anizm.*,puffytr.*##main>footer>.bizKimiz>.social
-anizle.*,anizm.*,puffytr.*##main .seo-content-block
 anizle.*,anizm.*,puffytr.*###episodes>.duyuruContainer
 anizle.*,anizm.*,puffytr.*##.anasayfaListe>h1
 anizle.*,anizm.*,puffytr.*##.anasayfaListe>p
@@ -30,44 +29,11 @@ anizle.*,anizm.*,puffytr.*##header > .content .anizm-nav-links > li:has(a:not([h
 anizle.*,anizm.*,puffytr.*##.anizm-portal-menu .item[href*="magaza"]
 anizle.*,anizm.*,puffytr.*##.anizm-portal-menu a.item:nth-of-type(5)
 anizle.*,anizm.*,puffytr.*##.anizm-portal-menu a.item:nth-child(6)
-anizle.*,anizm.*,puffytr.*##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
-anizle.*,anizm.*,puffytr.*###pushNotifyBox
-anizle.*,anizm.*,puffytr.*###pushDeniedModal
 
 
 
 
 ! Uyumluluk için basit şekilde yazılmışları:
-
-anizm.net###pushDeniedModal
-anizm.com.tr###pushDeniedModal
-anizm.com###pushDeniedModal
-anizm.pro###pushDeniedModal
-anizm.tv###pushDeniedModal
-anizle.com###pushDeniedModal
-anizle.net###pushDeniedModal
-puffytr.com###pushDeniedModal
-puffytr.net###pushDeniedModal
-
-anizm.net###pushNotifyBox
-anizm.com.tr###pushNotifyBox
-anizm.com###pushNotifyBox
-anizm.pro###pushNotifyBox
-anizm.tv###pushNotifyBox
-anizle.com###pushNotifyBox
-anizle.net###pushNotifyBox
-puffytr.com###pushNotifyBox
-puffytr.net###pushNotifyBox
-
-anizm.net##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
-anizm.com.tr##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
-anizm.com##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
-anizm.pro##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
-anizm.tv##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
-anizle.com##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
-anizle.net##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
-puffytr.com##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
-puffytr.net##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
 
 anizm.net##.anizm-portal-menu a.item:nth-child(6)
 anizm.com.tr##.anizm-portal-menu a.item:nth-child(6)
@@ -138,16 +104,6 @@ anizle.com###episodes>.duyuruContainer
 anizle.net###episodes>.duyuruContainer
 puffytr.com###episodes>.duyuruContainer
 puffytr.net###episodes>.duyuruContainer
-
-anizm.net##main .seo-content-block
-anizm.com.tr##main .seo-content-block
-anizm.com##main .seo-content-block
-anizm.pro##main .seo-content-block
-anizm.tv##main .seo-content-block
-anizle.com##main .seo-content-block
-anizle.net##main .seo-content-block
-puffytr.com##main .seo-content-block
-puffytr.net##main .seo-content-block
 
 anizm.net##main>footer>.bizKimiz>.social
 anizm.com.tr##main>footer>.bizKimiz>.social

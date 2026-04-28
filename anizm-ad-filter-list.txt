@@ -8,7 +8,7 @@
 ! DONATE: https://buymeacoffee.com/sanalzio
 ! Expires: 1 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt
-! Version: 1.1.0
+! Version: 1.1.1
 ! Syntax: AdBlock
 
 
@@ -92,6 +92,10 @@ puffytr.*,anizm.*,anizle.*##div[style^="text-align: center;"] > a[target="_blank
 anizle.*,anizm.*,puffytr.*##a[target="_blank"] > img.img-responsive[src^="/images/"][alt]
 anizle.*,anizm.*,puffytr.*##div[class^="aramas"] > a[target="_blank"]
 /images/*.gif$1p,from=anizle.*|anizle.com|anizle.net|anizm.*|anizm.com.tr|anizm.net|anizm.pro|puffytr.com|puffytr.*
+anizle.*,anizm.*,puffytr.*##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+anizle.*,anizm.*,puffytr.*###pushNotifyBox
+anizle.*,anizm.*,puffytr.*###pushDeniedModal
+anizle.*,anizm.*,puffytr.*##main .seo-content-block
 
 
 
@@ -378,6 +382,48 @@ anizle.*,anizm.*,puffytr.*##+js(abort-on-property-read, aclib)
 
 
 ! Element gizleyiciler
+
+anizm.net###pushDeniedModal
+anizm.com.tr###pushDeniedModal
+anizm.com###pushDeniedModal
+anizm.pro###pushDeniedModal
+anizm.tv###pushDeniedModal
+anizle.com###pushDeniedModal
+anizle.net###pushDeniedModal
+puffytr.com###pushDeniedModal
+puffytr.net###pushDeniedModal
+
+anizm.net###pushNotifyBox
+anizm.com.tr###pushNotifyBox
+anizm.com###pushNotifyBox
+anizm.pro###pushNotifyBox
+anizm.tv###pushNotifyBox
+anizle.com###pushNotifyBox
+anizle.net###pushNotifyBox
+puffytr.com###pushNotifyBox
+puffytr.net###pushNotifyBox
+
+anizm.net##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+anizm.com.tr##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+anizm.com##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+anizm.pro##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+anizm.tv##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+anizle.com##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+anizle.net##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+puffytr.com##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+puffytr.net##.animeIzleBolumListesi>div:not(:nth-last-of-type(1), :nth-last-of-type(2))
+
+anizm.net##main .seo-content-block
+anizm.com.tr##main .seo-content-block
+anizm.com##main .seo-content-block
+anizm.pro##main .seo-content-block
+anizm.tv##main .seo-content-block
+anizle.com##main .seo-content-block
+anizle.net##main .seo-content-block
+puffytr.com##main .seo-content-block
+puffytr.net##main .seo-content-block
+
+
 anizm.net###searchBoxAreaLeft
 anizm.com.tr###searchBoxAreaLeft
 anizm.com###searchBoxAreaLeft
