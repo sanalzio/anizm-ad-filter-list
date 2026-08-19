@@ -6,9 +6,9 @@
 ! Homepage: https://github.com/sanalzio/anizm-ad-filter-list/
 ! Licence: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/LICENSE
 ! DONATE: https://buymeacoffee.com/sanalzio
-! Expires: 1 days (update frequency)
+! Expires: 10 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-aggressive-ad-filter-list.txt
-! Version: 1.0.2
+! Version: 1.0.3
 ! Syntax: AdBlock
 
 
@@ -29,6 +29,7 @@ anizle.*,anizm.*,puffytr.*##header > .content .anizm-nav-links > li:has(a:not([h
 anizle.*,anizm.*,puffytr.*##.anizm-portal-menu .item[href*="magaza"]
 anizle.*,anizm.*,puffytr.*##.anizm-portal-menu a.item:nth-of-type(5)
 anizle.*,anizm.*,puffytr.*##.anizm-portal-menu a.item:nth-child(6)
+anizle.*,anizm.*,puffytr.*##.cookie-consent-banner
 
 
 

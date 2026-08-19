@@ -1,14 +1,14 @@
 ! 🦊 Anizm için reklam filtre listesi.
-! Alan adları: anizm.net, anizm.pro, anizm.tv, anizle.com, anizle.net, puffytr.com, puffytr.net
+! Alan adları: anizm.net, anizm.pro, anizm.tv, anizle.com, anizm.com.tr, anizle.net, puffytr.com, puffytr.net
 ! Title: 🦊 Anizm reklam filtresi listesi
 ! Description: Anizm siteleri için bir reklam filtre listesi.
 ! Author: Sanalzio
 ! Homepage: https://github.com/sanalzio/anizm-ad-filter-list/
 ! Licence: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/LICENSE
 ! DONATE: https://buymeacoffee.com/sanalzio
-! Expires: 1 days (update frequency)
+! Expires: 7 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt
-! Version: 1.1.1
+! Version: 1.1.2
 ! Syntax: AdBlock
 
 
@@ -25,6 +25,7 @@
 ||information-qot.com/code-process/*.js
 /(anizm|anizle|puffytr)\.(com|net|pro|tv|com\.tr)\/js\/(grnd|aclb|axium|amon).*?\.js/
 /(anizm|anizle|puffytr)\.(com|net|pro|tv|com\.tr)\/cdn-cgi\/zaraz\/.*?/
+/(anizm|anizle|puffytr)\.(com|net|pro|tv|com\.tr)\/js\/custom.*?\.js/
 /cdn-cgi/zaraz/*
 
 /js/pund*.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
@@ -35,6 +36,13 @@
 /images/*.gif$~3p,domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 /poo-und$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 /po-undr.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+/js/custom.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+
+! Sıkıntılı gözüküyor ama umarım sorun olmaz.
+/*.js?*class=video-card*$domain=wargamings.net
+/*.js?*class=video-card*$domain=wargamings.net$script
+||wargamings.net/*.js?*class=video-card*$script
+||wargamings.net/*.js?*class=video-card*
 
 /js/aahnucytsbnjfhsdusgg.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 
@@ -321,21 +329,21 @@ anizle.*,anizm.*,puffytr.*##+js(abort-on-property-read, aclib)
 ||puffytr.com/js/po*-und.js
 ||puffytr.net/js/po*-und.js
 
-||anizm.net/js/po-*und.js
-||anizm.com.tr/js/po-*und.js
-||anizm.com/js/po-*und.js
-||anizm.pro/js/po-*und.js
-||anizm.tv/js/po-*und.js
-||anizle.com/js/po-*und.js
-||anizle.net/js/po-*und.js
-||puffytr.com/js/po-*und.js
-||puffytr.net/js/po-*und.js
-
 ! Evet şimdilik tehlikeli gibi gözüküyorlar, sorun çıkartırlarsa kapatırım.
 /js/aahnucytsbnjfhsdusgg.js
 /js/vbftvbdysbysvyvsdsdvs.js
 /js/dnsjnajadnsjndjgfas.js
 /sngtmub/s.js
+
+||anizm.net/js/custom.js
+||anizm.com.tr/js/custom.js
+||anizm.com/js/custom.js
+||anizm.pro/js/custom.js
+||anizm.tv/js/custom.js
+||anizle.com/js/custom.js
+||anizle.net/js/custom.js
+||puffytr.com/js/custom.js
+||puffytr.net/js/custom.js
 
 ||anizm.net/sngtmub/s.js
 ||anizm.com.tr/sngtmub/s.js
@@ -379,6 +387,10 @@ anizle.*,anizm.*,puffytr.*##+js(abort-on-property-read, aclib)
 */tag.min.js$script,domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 */stattag.js$script,domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
 */stattags.js$script,domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
+
+
+||wargamings.net/*class=video-card
+||wargamings.net/*.js?*class=video-card
 
 
 ! Element gizleyiciler
