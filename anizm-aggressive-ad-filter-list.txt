@@ -8,7 +8,7 @@
 ! DONATE: https://buymeacoffee.com/sanalzio
 ! Expires: 10 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-aggressive-ad-filter-list.txt
-! Version: 1.0.3
+! Version: 1.0.4
 ! Syntax: AdBlock
 
 
@@ -35,6 +35,16 @@ anizle.*,anizm.*,puffytr.*##.cookie-consent-banner
 
 
 ! Uyumluluk için basit şekilde yazılmışları:
+
+anizm.net##.cookie-consent-banner
+anizm.com.tr##.cookie-consent-banner
+anizm.com##.cookie-consent-banner
+anizm.pro##.cookie-consent-banner
+anizm.tv##.cookie-consent-banner
+anizle.com##.cookie-consent-banner
+anizle.net##.cookie-consent-banner
+puffytr.com##.cookie-consent-banner
+puffytr.net##.cookie-consent-banner
 
 anizm.net##.anizm-portal-menu a.item:nth-child(6)
 anizm.com.tr##.anizm-portal-menu a.item:nth-child(6)
