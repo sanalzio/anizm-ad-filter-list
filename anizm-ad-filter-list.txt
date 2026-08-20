@@ -8,7 +8,7 @@
 ! DONATE: https://buymeacoffee.com/sanalzio
 ! Expires: 7 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt
-! Version: 1.1.2
+! Version: 1.1.3
 ! Syntax: AdBlock
 
 
@@ -25,7 +25,7 @@
 ||information-qot.com/code-process/*.js
 /(anizm|anizle|puffytr)\.(com|net|pro|tv|com\.tr)\/js\/(grnd|aclb|axium|amon).*?\.js/
 /(anizm|anizle|puffytr)\.(com|net|pro|tv|com\.tr)\/cdn-cgi\/zaraz\/.*?/
-/(anizm|anizle|puffytr)\.(com|net|pro|tv|com\.tr)\/js\/custom.*?\.js/
+/(anizm|anizle|puffytr)\.(com|net|pro|tv|com\.tr)\/js\/custom\.js.*?/
 /cdn-cgi/zaraz/*
 
 /js/pund*.js$domain=anizle.*|anizle.com|anizle.net|anizm.*|anizm.net|anizm.com.tr|anizm.pro|puffytr.com
@@ -72,7 +72,7 @@
 
 
 
-! Ya bunlar ne işe yarıyor bilmiyorum ama büyük olasılıkla reklam engellenmesi gerekiyor.
+! Ya bunlar ne i?e yarıyor bilmiyorum ama büyük olasılıkla reklam engellenmesi gerekiyor.
 
 /^https?:\/\/[a-z0-9]{5,15}\.(?:com|net)\/tag\.min\.js/$xhr,3p,redirect-rule=nooptext,to=com|net
 /^https?:\/\/[a-z0-9]{5,15}\.(?:com|net)\/tag\.min\.js/$xhr,3p,to=com|net
@@ -144,7 +144,7 @@ anizle.*,anizm.*,puffytr.*##+js(abort-on-property-read, aclib)
 /^[0-9a-z]{5,8}\.(art|cfd|fun|icu|info|live|pro|sbs|world)$/##+js(prevent-window-open, /^ [-\d]/)
 
 
-! Hmm burası sanırım olur da bir nedenden site lokalden veri aramaya çalışırsa engellesin diye.
+! Hmm burası sanırım olur da bir nedenden site lokalden veri aramaya çalı?ırsa engellesin diye.
 
 !#if env_chromium
 *$permissions=compute-pressure=(),from=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -176,7 +176,7 @@ anizle.*,anizm.*,puffytr.*##+js(abort-on-property-read, aclib)
 
 
 
-! Uyumluluk için basit şekilde yazılmışları:
+! Uyumluluk için basit ?ekilde yazılmı?ları:
 
 ! Popup engelleyiciler
 ||anizm.net/js/amon*.js
@@ -329,7 +329,7 @@ anizle.*,anizm.*,puffytr.*##+js(abort-on-property-read, aclib)
 ||puffytr.com/js/po*-und.js
 ||puffytr.net/js/po*-und.js
 
-! Evet şimdilik tehlikeli gibi gözüküyorlar, sorun çıkartırlarsa kapatırım.
+! Evet ?imdilik tehlikeli gibi gözüküyorlar, sorun çıkartırlarsa kapatırım.
 /js/aahnucytsbnjfhsdusgg.js
 /js/vbftvbdysbysvyvsdsdvs.js
 /js/dnsjnajadnsjndjgfas.js
@@ -482,7 +482,7 @@ anizle.com##.animeIzleInnerContainer > a
 anizle.net##.animeIzleInnerContainer > a
 puffytr.com##.animeIzleInnerContainer > a
 puffytr.net##.animeIzleInnerContainer > a
-! Evet burası bayağı bi salak saçma bir şey olmuş gibi duruyor. Eğer bölüm sayfasında birşeyler ters gidiyorsa önce bi reklam engelleyiciyi kapatıp denemenizi tavsiye ediyorum.
+! Evet burası baya?ı bi salak saçma bir ?ey olmu? gibi duruyor. E?er bölüm sayfasında bir?eyler ters gidiyorsa önce bi reklam engelleyiciyi kapatıp denemenizi tavsiye ediyorum.
 
 anizm.net###discordInviteBox
 anizm.com.tr###discordInviteBox
