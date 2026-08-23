@@ -8,7 +8,7 @@
 ! DONATE: https://buymeacoffee.com/sanalzio
 ! Expires: 7 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-ad-filter-list.txt
-! Version: 1.1.3
+! Version: 1.1.4
 ! Syntax: AdBlock
 
 
@@ -69,6 +69,7 @@
 ||tzegilo.com^
 ||excavatenearbywand.com^
 ||oxlhcuol.com^
+||adexchangerapid.com^
 
 
 
