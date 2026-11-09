@@ -8,7 +8,7 @@
 ! DONATE: https://buymeacoffee.com/sanalzio
 ! Expires: 10 days (update frequency)
 ! RAW: https://raw.githubusercontent.com/sanalzio/anizm-ad-filter-list/master/anizm-aggressive-ad-filter-list.txt
-! Version: 1.0.4
+! Version: 1.1.0
 ! Syntax: AdBlock
 
 
@@ -30,6 +30,14 @@ anizle.*,anizm.*,puffytr.*##.anizm-portal-menu .item[href*="magaza"]
 anizle.*,anizm.*,puffytr.*##.anizm-portal-menu a.item:nth-of-type(5)
 anizle.*,anizm.*,puffytr.*##.anizm-portal-menu a.item:nth-child(6)
 anizle.*,anizm.*,puffytr.*##.cookie-consent-banner
+anizle.*,anizm.*,puffytr.*##.v3-watch-community
+anizle.*,anizm.*,puffytr.*##.v3-footer
+anizle.*,anizm.*,puffytr.*##.v3-side-link[title*="manga"]
+anizle.*,anizm.*,puffytr.*##.v3-side-link[href*="magaza"]
+anizle.*,anizm.*,puffytr.*##.v3-account-dropdown > .v3-account-premium-link
+anizle.*,anizm.*,puffytr.*##.v3-sidebar-bottom .v3-side-link
+
+
 
 
 
@@ -135,3 +143,63 @@ anizle.com##main>footer>.populerAnimeler
 anizle.net##main>footer>.populerAnimeler
 puffytr.com##main>footer>.populerAnimeler
 puffytr.net##main>footer>.populerAnimeler
+
+anizm.net##.v3-watch-community
+anizm.com.tr##.v3-watch-community
+anizm.com##.v3-watch-community
+anizm.pro##.v3-watch-community
+anizm.tv##.v3-watch-community
+anizle.com##.v3-watch-community
+anizle.net##.v3-watch-community
+puffytr.com##.v3-watch-community
+puffytr.net##.v3-watch-community
+
+anizm.net##.v3-footer
+anizm.com.tr##.v3-footer
+anizm.com##.v3-footer
+anizm.pro##.v3-footer
+anizm.tv##.v3-footer
+anizle.com##.v3-footer
+anizle.net##.v3-footer
+puffytr.com##.v3-footer
+puffytr.net##.v3-footer
+
+anizm.net##.v3-side-link[title*="manga"]
+anizm.com.tr##.v3-side-link[title*="manga"]
+anizm.com##.v3-side-link[title*="manga"]
+anizm.pro##.v3-side-link[title*="manga"]
+anizm.tv##.v3-side-link[title*="manga"]
+anizle.com##.v3-side-link[title*="manga"]
+anizle.net##.v3-side-link[title*="manga"]
+puffytr.com##.v3-side-link[title*="manga"]
+puffytr.net##.v3-side-link[title*="manga"]
+
+anizm.net##.v3-side-link[href*="magaza"]
+anizm.com.tr##.v3-side-link[href*="magaza"]
+anizm.com##.v3-side-link[href*="magaza"]
+anizm.pro##.v3-side-link[href*="magaza"]
+anizm.tv##.v3-side-link[href*="magaza"]
+anizle.com##.v3-side-link[href*="magaza"]
+anizle.net##.v3-side-link[href*="magaza"]
+puffytr.com##.v3-side-link[href*="magaza"]
+puffytr.net##.v3-side-link[href*="magaza"]
+
+anizm.net##.v3-account-dropdown > .v3-account-premium-link
+anizm.com.tr##.v3-account-dropdown > .v3-account-premium-link
+anizm.com##.v3-account-dropdown > .v3-account-premium-link
+anizm.pro##.v3-account-dropdown > .v3-account-premium-link
+anizm.tv##.v3-account-dropdown > .v3-account-premium-link
+anizle.com##.v3-account-dropdown > .v3-account-premium-link
+anizle.net##.v3-account-dropdown > .v3-account-premium-link
+puffytr.com##.v3-account-dropdown > .v3-account-premium-link
+puffytr.net##.v3-account-dropdown > .v3-account-premium-link
+
+anizm.net##.v3-sidebar-bottom .v3-side-link
+anizm.com.tr##.v3-sidebar-bottom .v3-side-link
+anizm.com##.v3-sidebar-bottom .v3-side-link
+anizm.pro##.v3-sidebar-bottom .v3-side-link
+anizm.tv##.v3-sidebar-bottom .v3-side-link
+anizle.com##.v3-sidebar-bottom .v3-side-link
+anizle.net##.v3-sidebar-bottom .v3-side-link
+puffytr.com##.v3-sidebar-bottom .v3-side-link
+puffytr.net##.v3-sidebar-bottom .v3-side-link
